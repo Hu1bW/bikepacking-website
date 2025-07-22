@@ -1,0 +1,482 @@
+* {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #efefef;
+    height: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 700;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo {
+    letter-spacing: -4px;
+    font-size: 24px;
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+}
+
+.nav {
+    display: flex;
+    gap: 55px; /* Spacing between links */
+}
+
+.nav a {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
+.nav a:hover {
+    transform: scale(1.2);
+    transition-duration: .2s;
+}
+
+.body {
+    display: flex;
+}
+
+.spacer {
+    display: inline-block;
+    background-color: #c2c2c2;
+    padding: 1% 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../assets/images/Hero1alt.jpeg'); /* Correct relative path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    color: white; /* Adjust text color for contrast */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero .hero-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transform: translateY(-200%);
+    padding:0 25%;
+}
+
+.hero-text h1, 
+.train-of-thoughts h1 {
+    transform: scale(2) translateY(-30%);
+    font-size: 32px;
+    letter-spacing: 3px;
+    color: #232c24;
+    color: rgb(29, 31, 29);
+    -webkit-text-stroke: .5px rgba(255, 255, 255, 0.873);
+}
+
+.hero .hero-text p {
+    font-size: 18px;
+    color: #d1d1d1;
+    transform: translateY(50px);
+}
+
+.hero2 .cta-btn {
+    display: inline-block;
+    background-color: rgb(239, 239, 239);
+    color: rgb(90, 89, 89);
+    padding: 10px 25px;
+    border-radius: 7px;
+    transform: translateY(25px);
+    text-decoration: none;
+  }
+
+  .hero2 .cta-btn:hover {
+    display: inline-block;
+    background-color: rgb(83, 82, 82);
+    color: rgb(226, 220, 220);
+    transition-duration: .2s;
+  }
+
+.hero2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../assets/images/HeroBanner2.jpg'); /* Correct relative path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    color: white; /* Adjust text color for contrast */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero2 .hero-text {
+    background-color: #232c2480;
+    padding: 5% 30%;
+}
+
+.hero2 .hero-text h1 {
+    color: #dfedeb;
+    -webkit-text-stroke: .5px rgba(23, 32, 27, 0.636);
+}
+
+.hero2 p {
+    color: #dfedeb;
+}
+
+.train-of-thoughts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('../assets/images/SalzBurg.jpeg'); /* Correct relative path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    color: white; /* Adjust text color for contrast */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.train-of-thoughts h1 {
+    color: #dfedeb;
+    -webkit-text-stroke: .5px rgba(23, 32, 27, 0.636);
+    background-color: #232c2480;
+    padding: 15px 16%;
+}
+
+.train-of-thoughts p {
+    max-width: 50%;
+    background-color: #232c2480;
+    padding: 15px 25%;
+}
+
+.journeys-all {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.journeys-all h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    color: #161816c5;
+    transform: translateY(-100%);
+}
+
+.travel-items,
+.project-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.travel-item,
+.project-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.travel-item:hover,
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.travel-item img,
+.project-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.travel-item h3,
+.project-item h3 {
+    margin: 15px;
+    font-size: 1.2em;
+}
+
+.travel-item p,
+.project-item p {
+  margin: 0 15px 15px;
+  color: #555;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3; /* or 16 / 9 */
+    overflow: hidden;
+}
+  
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero3 {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    max-width: 100vw;
+    background-image: url('../assets/images/Touring920.png'); /* Correct relative path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    color: white; /* Adjust text color for contrast */
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-between; /* Even spacing between items */
+    align-items: stretch;          /* Make items equal height */
+    gap: 20px;                     /* Spacing between service items */
+}
+
+.service-item {
+    flex: 1;                       /* All items grow equally */
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between; /* Spread content across the footer */
+    align-items: center;            /* Center items vertically */
+    padding: 10px 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; /* Space between social links */
+}
+
+.learnings {
+    display: flex;
+    flex-wrap: wrap;        /* Allow wrapping to next row */
+    gap: 20px;              /* Space between items */
+}
+.learning-item {
+    flex: 1 1 calc(33.333% - 20px); /* Flex-grow, flex-shrink, flex-basis */
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.clipped-div-framebag {
+    position: absolute;
+    z-index: 3;
+    width: 922px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #81b2e700; /* Set a background color */
+    clip-path: polygon(39.3% 25.8%, 67.9% 6.5%, 45.8% 74.8%);
+    -webkit-clip-path: polygon(39.3% 25.8%, 67.9% 6.5%, 45.8% 74.8%); /* Ensure compatibility with older browsers */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: scale(2);
+    translate: 0% -20%;
+}
+
+.clipped-div-framebag:hover {
+    background-color: #007bff32; /* Set a background color */
+}
+
+.clipped-div-fork {
+    position: absolute;
+    z-index: 1;
+    width: 922px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #ff583300; /* Set a background color */
+    clip-path: polygon(68.1% 19.8%, 71.7% 17.8%, 81.8% 72.5%, 79.5% 74.8%);
+    -webkit-clip-path: polygon(68.1% 19.8%, 71.7% 17.8%, 81.8% 72.5%, 79.5% 74.8%); /* Ensure compatibility with older browsers */
+    color: white; /* Text color for visibility */ 
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    text-align: center;
+    transform: scale(2);
+    translate: 0% -20%;
+
+}
+
+.clipped-div-fork:hover {
+    background-color: #ff58334c; /* Set a background color */
+}
+
+.clipped-div-frame {
+    position: absolute;
+    z-index: 1;
+    width: 922px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #33ff7a00; /* Set a background color */
+    clip-path: polygon(67.4% 2.3%, 69.7% 11%, 71.4% 17.3%, 68.5% 20.5%, 68.2% 19.3%, 46% 79.8%, 20.7% 75.8%, 19.7% 61.5%, 38.2% 32.8%, 36.9% 23.8%);
+    -webkit-clip-path: polygon(67.4% 2.3%, 69.7% 11%, 71.4% 17.3%, 68.5% 20.5%, 68.2% 19.3%, 46% 79.8%, 20.7% 75.8%, 19.7% 61.5%, 38.2% 32.8%, 36.9% 23.8%); /* Ensure compatibility with older browsers */
+    color: white; /* Text color for visibility */ 
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    text-align: center;
+    transform: scale(1.95);
+    translate: 0% -23%;
+}
+
+.clipped-div-frame:hover {
+    background-color: #33ff7a4c; /* Set a background color */
+}
+
+.clipped-div-seat {
+    position: absolute;
+    width: 922px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #e690ee00; /* Set a background color */
+    clip-path: polygon(38.2% 26.8%, 36.3% 27.5%, 32.5% 11%, 27.4% 9.5%, 25.8% 4.3%, 33% 5.5%, 40.2% 4.3%, 40.7% 7.7%, 36.8% 7.8%, 34.8% 10.8%);
+    -webkit-clip-path: polygon(38.2% 26.8%, 36.3% 27.5%, 32.5% 11%, 27.4% 9.5%, 25.8% 4.3%, 33% 5.5%, 40.2% 4.3%, 40.7% 7.7%, 36.8% 7.8%, 34.8% 10.8%); /* Ensure compatibility with older browsers */
+    color: white; /* Text color for visibility */ 
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    text-align: center;
+    transform: rotate(20deg);
+    transform: scale(1.95);
+
+    translate: -1% -50%;
+}
+
+.clipped-div-seat:hover {
+    background-color: #e690ee4c; /* Set a background color */
+}
+
+.clipped-div-chain {
+    position: absolute;
+    z-index: 2;
+    width: 922px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #ebe06700; /* Set a background color */
+    clip-path: polygon(25.6% 65.5%, 47.4% 68.8%, 49.6% 76.8%, 47.5% 85.5%, 18.9% 97%, 16.9% 92.5%, 18.7% 85.3%, 15% 69%, 18.3% 60.3%, 24% 60.5%);
+    -webkit-clip-path: polygon(25.6% 65.5%, 47.4% 68.8%, 49.6% 76.8%, 47.5% 85.5%, 18.9% 97%, 16.9% 92.5%, 18.7% 85.3%, 15% 69%, 18.3% 60.3%, 24% 60.5%); /* Ensure compatibility with older browsers */
+    color: white; /* Text color for visibility */ 
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    text-align: center;
+    transform: scale(1.95);
+    translate: -1% -21%;
+}
+
+.clipped-div-chain:hover {
+    background-color: #ebe06779; /* Set a background color */
+}
+
+.clipped-div-paddle {
+    position: absolute;
+    z-index: 3;
+    width: 922px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #eb676700; /* Set a background color */
+    clip-path: polygon(44.1% 74.8%, 58.1% 75.5%, 58.1% 81.8%, 43.9% 80.8%);
+    -webkit-clip-path: polygon(44.1% 74.8%, 58.1% 75.5%, 58.1% 81.8%, 43.9% 80.8%); /* Ensure compatibility with older browsers */
+    color: white; /* Text color for visibility */ 
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+    text-align: center;
+    transform: scale(1.95);
+    translate: 0% -20.5%;
+}
+
+.clipped-div-paddle:hover {
+    background-color: #eb676779; /* Set a background color */
+}
+
+.clipped-div-front-wheel {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 127, 80, 0);
+    clip-path: circle(50% at 50% 50%);
+    transform: scale(2.3);
+    translate: 185% 22.5%;
+}
+
+.clipped-div-front-wheel:hover {
+    background-color: rgba(255, 127, 80, 0.314);
+}
+
+.clipped-div-back-wheel {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    /* background-color: rgba(255, 127, 80, 0); */
+    clip-path: circle(50% at 50% 50%);
+    transform: scale(2.3);
+    translate: -182% 27%;
+}
+
+.clipped-div-back-wheel:hover {
+    background-color: rgba(255, 127, 80, 0.314);
+}
+
+.popup {
+    color: black;
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.popup span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.close-popup {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.close-popup:hover {
+    background-color: #d32f2f;
+}
