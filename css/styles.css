@@ -235,24 +235,7 @@
     object-fit: cover;
 }
 
-.hero3 {
-    padding: 0px;
-    margin: 0px;
-    padding-top: 10%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100vh; /* Full viewport height */
-    max-width: 100vw;
-    background-image: url('../assets/images/Touring920.png'); /* Correct relative path */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent tiling */
-    color: white; /* Adjust text color for contrast */
-}
+
 
 .service-items {
     display: flex;
@@ -290,6 +273,40 @@
     padding: 20px;
 }
 
+/* Hero Section for Bike Frame */
+
+.hero3 {
+    width: 100vw;
+    min-height: 80vh;
+    margin: 60px 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: none; /* Verwijder de achtergrond hier */
+}
+
+.hero3-bg {
+    width: 100%;
+    max-width: 90%; /* vaste breedte, niet procentueel */
+    min-height: 70vh;
+    background-image: url('../assets/images/Touring920.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 40px 0;
+}
+/* Clipped Divs for Bike Frame */
+
 .clipped-div-framebag {
     position: absolute;
     z-index: 3;
@@ -302,8 +319,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    transform: scale(2);
-    translate: 0% -20%;
+    transform: scale(1.45);
+    translate: 0% 1%;
 }
 
 .clipped-div-framebag:hover {
@@ -323,8 +340,8 @@
     justify-content: center;   
     align-items: center; 
     text-align: center;
-    transform: scale(2);
-    translate: 0% -20%;
+    transform: scale(1.40);
+    translate: 0% 1%;
 
 }
 
@@ -345,8 +362,8 @@
     justify-content: center;   
     align-items: center; 
     text-align: center;
-    transform: scale(1.95);
-    translate: 0% -23%;
+    transform: scale(1.40);
+    translate: 0% 0%;
 }
 
 .clipped-div-frame:hover {
@@ -365,10 +382,9 @@
     justify-content: center;   
     align-items: center; 
     text-align: center;
-    transform: rotate(20deg);
-    transform: scale(1.95);
 
-    translate: -1% -50%;
+    transform: scale(1.60) rotate(8deg);
+    translate:  0% -5%;
 }
 
 .clipped-div-seat:hover {
@@ -388,8 +404,8 @@
     justify-content: center;   
     align-items: center; 
     text-align: center;
-    transform: scale(1.95);
-    translate: -1% -21%;
+    transform: scale(1.45);
+    translate: 0% -1%;
 }
 
 .clipped-div-chain:hover {
@@ -409,8 +425,8 @@
     justify-content: center;   
     align-items: center; 
     text-align: center;
-    transform: scale(1.95);
-    translate: 0% -20.5%;
+    transform: scale(1.45);
+    translate: 0% -2%;
 }
 
 .clipped-div-paddle:hover {
@@ -423,8 +439,8 @@
     height: 300px;
     background-color: rgba(255, 127, 80, 0);
     clip-path: circle(50% at 50% 50%);
-    transform: scale(2.3);
-    translate: 185% 22.5%;
+    transform: scale(1.72);
+    translate: 129.5% 36%;
 }
 
 .clipped-div-front-wheel:hover {
@@ -437,13 +453,15 @@
     height: 300px;
     /* background-color: rgba(255, 127, 80, 0); */
     clip-path: circle(50% at 50% 50%);
-    transform: scale(2.3);
-    translate: -182% 27%;
+    transform: scale(1.75);
+    translate: -128% 38%;
 }
 
 .clipped-div-back-wheel:hover {
     background-color: rgba(255, 127, 80, 0.314);
 }
+
+/* Popup Styles */
 
 .popup {
     color: black;
@@ -504,3 +522,4 @@
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     display: inline-block;
 }
+
