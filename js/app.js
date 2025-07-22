@@ -1,5 +1,5 @@
 // --- popup logic ---
-document.querySelectorAll('.clipped-div-framebag, .clipped-div-fork, .clipped-div-front-wheel, .clipped-div-back-wheel, .clipped-div-chain, .clipped-div-seat, .clipped-div-frame, .clipped-div-paddle').forEach(div => {
+document.querySelectorAll('.clipped-div-framebag, .clipped-div-steering, .clipped-div-fork, .clipped-div-front-wheel, .clipped-div-back-wheel, .clipped-div-chain, .clipped-div-seat, .clipped-div-frame, .clipped-div-paddle').forEach(div => {
     div.addEventListener('click', function () {
         const popup = document.getElementById('popup');
         const popupText = document.getElementById('popup-text');

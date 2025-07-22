@@ -307,6 +307,26 @@
 }
 /* Clipped Divs for Bike Frame */
 
+.clipped-div-steering {
+    position: absolute;
+    z-index: 3;
+    width: 922px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    background-color: #d364e200; /* Set a background color */
+    clip-path: polygon(80% 4%, 100% 1%, 97% 19%, 86% 19%);;
+    -webkit-clip-path: polygon(80% 4%, 100% 1%, 97% 19%, 86% 19%);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: scale(1.5) rotate(-108deg);
+    translate: 76% 50%;
+}
+
+.clipped-div-steering:hover {
+    background-color: #e100ff5b; /* Set a background color */
+}
+
 .clipped-div-framebag {
     position: absolute;
     z-index: 3;
