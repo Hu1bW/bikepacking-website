@@ -84,7 +84,6 @@
     letter-spacing: 3px;
     color: #232c24;
     color: rgb(29, 31, 29);
-    -webkit-text-stroke: .5px rgba(255, 255, 255, 0.873);
 }
 
 .hero .hero-text p {
@@ -132,7 +131,6 @@
 
 .hero2 .hero-text h1 {
     color: #dfedeb;
-    -webkit-text-stroke: .5px rgba(23, 32, 27, 0.636);
 }
 
 .hero2 p {
@@ -156,7 +154,6 @@
 
 .train-of-thoughts h1 {
     color: #dfedeb;
-    -webkit-text-stroke: .5px rgba(23, 32, 27, 0.636);
     background-color: #232c2480;
     padding: 15px 16%;
 }
