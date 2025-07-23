@@ -324,7 +324,7 @@ display: none;
 }
 
 .clipped-div-steering:hover {
-    background-color: #33ff7a4c; /* Set a background color */
+    background-color: #33ff7aa6; /* Set a background color */
 }
 
 .clipped-div-framebag {
@@ -451,7 +451,7 @@ display: none;
 }
 
 .clipped-div-front-wheel:hover {
-    background-color: #ff33338a;
+    background-color: #33ff7aa1;
 }
 
 .clipped-div-back-wheel {
@@ -466,7 +466,7 @@ display: none;
 }
 
 .clipped-div-back-wheel:hover {
-    background-color: #ff33338a;
+    background-color: #33ff7aa1;
 }
 /*
 
@@ -485,6 +485,11 @@ display: none;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+}
+
+.popup h2 {
+    margin-top: 0;
+    font-size: 2em;
 }
 
 .popup span {
