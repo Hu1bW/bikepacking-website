@@ -1,9 +1,55 @@
 const popupContent = {
     "clipped-div-steering": `
-        <h2>Steering wheel and accessories</h2>
-        <img src="../assets/images/steering.jpg" alt="Steering" style="max-width:100%;">
-        <p>This is the steering. <a href="https://example.com/steering" target="_blank">See product</a></p>
-    `,
+      
+  <h2>Het stuur</h2>
+  <h4>En de mogelijke bagage opties</h4>
+
+  <div style="margin-top: 30px;">
+    <div style="display: flex; gap: 20px; align-items: flex-start;">
+      <div style="width: 200px; height: 200px; background-color: #ddd; display: flex; justify-content: center; align-items: center;"></div>
+      <div style="flex: 1;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Curabitur vel turpis nec libero gravida interdum.</p>
+        <p>Nam tincidunt libero sed justo aliquet, at tincidunt lorem.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <h3>Wat heb ik aan mijn stuur</h3>
+    <div style="display: flex; gap: 20px; margin-top: 15px;">
+      <div style="width: 150px; height: 150px; background-color: #ddd; display: flex; justify-content: center; align-items: center;"></div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <div style="width: 70px; height: 70px; background-color: #ddd;"></div>
+        <div style="width: 70px; height: 70px; background-color: #ddd;"></div>
+      </div>
+      <ul style="list-style: disc; padding-left: 20px; margin: 0; flex-shrink: 0;">
+        <li>Item één</li>
+        <li>Item twee</li>
+        <li>Item drie</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px;">
+    <h3>Mijn tassen</h3>
+    <div>
+      <p>Dit is een beschrijving van de tassen die ik meeneem.</p>
+      <p>Ze variëren per reis en weersomstandigheden.</p>
+    </div>
+    <div style="display: flex; gap: 20px; margin-top: 15px;">
+      <div style="width: 150px; height: 150px; background-color: #ddd; display: flex; justify-content: center; align-items: center;"></div>
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <div style="width: 70px; height: 70px; background-color: #ddd;"></div>
+        <div style="width: 70px; height: 70px; background-color: #ddd;"></div>
+      </div>
+      <ul style="list-style: disc; padding-left: 20px; margin: 0; flex-shrink: 0;">
+        <li>Tas 1</li>
+        <li>Tas 2</li>
+        <li>Tas 3</li>
+      </ul>
+    </div>
+  </div>    `,
     "clipped-div-framebag": `
         <h2>Frame Bag</h2>
         <img src="../assets/images/framebag.jpg" alt="Frame Bag" style="max-width:100%;">
