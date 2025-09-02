@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -9,8 +11,7 @@
   padding: 0 50px;
   background-color: #efefef;
   height: 60px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
   font-size: 16px;
   letter-spacing: 3px;
   font-weight: 700;
@@ -49,6 +50,7 @@
 
 .body {
   display: flex;
+  background-color: floralwhite;
 }
 
 .spacer {
@@ -77,13 +79,12 @@
 .hero .hero-text {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  transform: translateY(-200%);
   padding: 0 25%;
 }
 
-.hero-text h1,
+.hero .hero-text h1,
 .train-of-thoughts h1 {
-  transform: scale(2) translateY(-30%);
+  transform: scale(2);
   font-size: 32px;
   letter-spacing: 3px;
   color: rgb(227, 227, 227);
@@ -95,53 +96,68 @@
   transform: translateY(50px);
 }
 
-.hero2 .cta-btn {
-  display: inline-block;
-  background-color: #4caf50;
-  color: rgb(23, 23, 23);
-  padding: 10px 25px;
-  border-radius: 7px;
-  transform: translateY(25px);
-  text-decoration: none;
-}
-
-.hero2 .cta-btn:hover {
-  display: inline-block;
-  background-color: rgb(251, 0, 255);
-  color: rgb(226, 220, 220);
-  transition-duration: 0.2s;
-}
-
 .hero2 {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  height: 100vh; /* Full viewport height */
-  background-image: url("../assets/images/HeroBanner2.jpg"); /* Correct relative path */
-  background-size: cover; /* Ensure the image covers the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  color: white; /* Adjust text color for contrast */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #fff;
+  background: url("../assets/images/HeroBanner2.jpg") no-repeat center right;
+  background-size: cover;
+  background-color: #000; /* Fallback color */
+  padding: 0 6%;
 }
 
-.hero2 .hero-text {
-  background-color: #232c2480;
-  padding: 5% 30%;
+.hero2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
 }
 
 .hero2 .hero-text h1 {
-  color: #dfedeb;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
-.hero2 p {
-  color: #dfedeb;
+.hero-text h1 span {
+  color: #2bb745;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #ddd;
+}
+
+.cta-btn {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #63c42b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cta-btn:hover {
+  color: #fff;
 }
 
 .train-of-thoughts {
+  position: relative; /* nodig voor absolute positioning van ::before */
   display: flex;
   padding: 0 10%;
   flex-direction: column;
@@ -149,35 +165,64 @@
   align-items: center;
   text-align: center;
   height: 100vh; /* Full viewport height */
-  background-image: url("../assets/images/SalzBurg.jpeg"); /* Correct relative path */
-  background-size: cover; /* Ensure the image covers the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  color: white; /* Adjust text color for contrast */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* background-image: url("../assets/images/SalzBurg.jpeg"); */
+  background-color: #05250d;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(228, 224, 224);
+
+  z-index: 1; /* zorgt dat content boven de overlay zit */
+}
+
+.train-of-thoughts::before {
+  content: ""; /* zonder dit zie je niks */
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.81) 25%,
+    /* links donkerder */ rgba(0, 0, 0, 0.2) 100%
+      /* rechts lichter zodat je foto zichtbaar blijft */
+  );
+  z-index: -1; /* zet de overlay tussen de background en de tekst */
 }
 
 .train-of-thoughts h1 {
   color: #dfedeb;
-  background-color: #232c2480;
-  padding: 15px 16%;
+  padding: 40px 16%;
 }
 
 .train-of-thoughts p {
   max-width: 50%;
-  background-color: #232c2480;
   padding: 15px 25%;
+  text-align: left;
 }
 
 .journeys-all {
+  position: relative;
   padding: 2% 10%;
   text-align: center;
+  background: url("../assets/images/Journeysbg.png") no-repeat center right;
+  background-size: cover;
+  z-index: 1;
+}
+
+.journeys-all::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a8;
+  z-index: -1;
 }
 
 .journeys-all h2 {
   font-size: 42px;
   margin-bottom: 30px;
+  color: bisque;
 }
 
 .travel-items {
@@ -280,7 +325,7 @@
   gap: 20px;
   flex-wrap: wrap;
   padding: 3% 10% 3% 10%;
-  background-color: #3f3f3f;
+  background-color: #032109;
 }
 
 .learnings h2 {
@@ -376,7 +421,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background: none; /* Verwijder de achtergrond hier */
+  background-color: #032109;
 }
 .hero3-bg {
   position: relative;
@@ -387,6 +432,7 @@
   border-radius: 24px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .bike-img {
