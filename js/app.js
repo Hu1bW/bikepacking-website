@@ -6,9 +6,9 @@ const popupContent = {
 
   <div style="margin-top: 30px;">
     <div style="display: flex; gap: 20px; align-items: flex-start;">
-      <div style="width: 200px; height: 200px; background-color: #ddd; display: flex; justify-content: center; align-items: center;"></div>
+      <div style="width: 200px; height: 200px; background-color: #ddd; display: flex; justify-content: center; align-items: center; background-image: url('../assets/images/SalzBurg.jpeg');"></div>
       <div style="flex: 1;">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Voorop mijn fiets hangt een [merknaam en type]<br> waarmee ik sinds de aanschaf van Olivia al mee rij.</p>
         <p>Curabitur vel turpis nec libero gravida interdum.</p>
         <p>Nam tincidunt libero sed justo aliquet, at tincidunt lorem.</p>
       </div>
