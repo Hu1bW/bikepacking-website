@@ -870,3 +870,96 @@
   line-height: 1.2;
   margin-bottom: 20px;
 }
+
+.heroLearnings2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #fff;
+  background: url("../assets/images/LearningsHero2.JPG") no-repeat center right;
+  background-size: cover;
+  background-color: #000;
+  padding: 0 6%;
+}
+
+.heroLearnings2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.heroLearnings2 .hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.heroLearnings3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #fff;
+  background: url("../assets/images/LearningsHero3.JPG") no-repeat center right;
+  background-size: cover;
+  background-color: #000;
+  padding: 0 6%;
+}
+
+.heroLearnings3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.heroLearnings3 .hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.heroLearnings4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #fff;
+  background: url("../assets/images/LearningsHero4.JPG") no-repeat center right;
+  background-size: cover;
+  background-color: #000;
+  padding: 0 6%;
+}
+
+.heroLearnings4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+.heroLearnings4 .hero-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
