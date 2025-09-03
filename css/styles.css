@@ -35,7 +35,7 @@
 
 .nav {
   display: flex;
-  gap: 55px; /* Spacing between links */
+  gap: 55px; 
 }
 
 .nav a {
@@ -66,12 +66,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh; /* Full viewport height */
-  background-image: url("../assets/images/Hero1alt.jpeg"); /* Correct relative path */
-  background-size: cover; /* Ensure the image covers the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  color: white; /* Adjust text color for contrast */
+  height: 100vh;
+  background-image: url("../assets/images/Hero1alt.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -105,7 +105,7 @@
   color: #fff;
   background: url("../assets/images/HeroBanner2.jpg") no-repeat center right;
   background-size: cover;
-  background-color: #000; /* Fallback color */
+  background-color: #000;
   padding: 0 6%;
 }
 
@@ -157,35 +157,35 @@
 }
 
 .train-of-thoughts {
-  position: relative; /* nodig voor absolute positioning van ::before */
+  position: relative;
   display: flex;
   padding: 0 10%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh; /* Full viewport height */
-  /* background-image: url("../assets/images/SalzBurg.jpeg"); */
+  height: 100vh; 
+ 
   background-color: #05250d;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(228, 224, 224);
 
-  z-index: 1; /* zorgt dat content boven de overlay zit */
+  z-index: 1; 
 }
 
 .train-of-thoughts::before {
-  content: ""; /* zonder dit zie je niks */
+  content: "";
   position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  inset: 0; 
   background: linear-gradient(
     to right,
     rgba(0, 0, 0, 0.81) 25%,
-    /* links donkerder */ rgba(0, 0, 0, 0.2) 100%
-      /* rechts lichter zodat je foto zichtbaar blijft */
+  rgba(0, 0, 0, 0.2) 100%
+     
   );
-  z-index: -1; /* zet de overlay tussen de background en de tekst */
+  z-index: -1; 
 }
 
 .train-of-thoughts h1 {
@@ -294,7 +294,7 @@
   background: #4caf50;
 }
 
-/* Responsive (2 cards per row on tablets, 1 card per row on mobile) */
+
 @media (max-width: 900px) {
   .travel-items {
     grid-template-columns: repeat(2, 1fr);
@@ -384,8 +384,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  background-color: #ffffff; /* donkere basis */
-  color: #bbb; /* zachte grijstint voor tekst */
+  background-color: #ffffff; 
+  color: #bbb; 
   font-size: 14px;
 }
 
@@ -405,7 +405,7 @@
 }
 
 .social-icons a:hover {
-  color: #fff; /* subtiele hover */
+  color: #fff; 
 }
 
 /* Responsiveness */
@@ -434,7 +434,7 @@
   position: relative;
   width: 100vw;
   max-width: 1200px;
-  aspect-ratio: 601 / 316; /* was 601 / 400, now taller */
+  aspect-ratio: 601 / 316; 
   margin: 0 auto;
   border-radius: 24px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
@@ -448,6 +448,7 @@
   position: center;
   margin: 0 auto;
 }
+
 /* Clipped Divs for Bike Frame */
 
 .highlight-text {
@@ -456,10 +457,10 @@
 
 .clipped-div-steering {
   position: absolute;
-  width: 100%; /* Adjust until it matches the wheel size */
+  width: 100%; 
   aspect-ratio: 1/1;
-  left: -1%; /* Adjust until it matches the wheel position */
-  top: -43%; /* Adjust until it matches the wheel position */
+  left: -1%;
+  top: -43%; 
   background-color: rgba(255, 127, 80, 0);
   clip-path: polygon(
     91% 4%,
@@ -491,15 +492,15 @@
 }
 
 .clipped-div-steering:hover {
-  background-color: #33ff7aa6; /* Set a background color */
+  background-color: #33ff7aa6;
 }
 
 .clipped-div-framebag {
   position: absolute;
-  width: 100%; /* Adjust until it matches the wheel size */
+  width: 100%; 
   aspect-ratio: 1/1;
-  left: 0%; /* Adjust until it matches the wheel position */
-  top: -46%; /* Adjust until it matches the wheel position */
+  left: 0%; 
+  top: -46%; 
   background-color: rgba(255, 127, 80, 0);
   clip-path: polygon(80% 20%, 32% 34%, 43% 67%);
   -webkit-clip-path: polygon(80% 20%, 32% 34%, 43% 67%);
@@ -509,37 +510,37 @@
 }
 
 .clipped-div-framebag:hover {
-  background-color: #33ff7aa1; /* Set a background color */
+  background-color: #33ff7aa1; 
 }
 
 .clipped-div-fork {
   position: absolute;
   z-index: 1;
-  width: 100%; /* Adjust until it matches the wheel size */
+  width: 100%; 
   aspect-ratio: 1/1;
-  left: -0.7%; /* Adjust until it matches the wheel position */
-  top: -46%; /* Adjust until it matches the wheel position */
-  background-color: #ff583300; /* Set a background color */
+  left: -0.7%; 
+  top: -46%; 
+  background-color: #ff583300; 
   clip-path: polygon(79% 29%, 85% 27%, 100% 64%, 98% 67%);
   -webkit-clip-path: polygon(
     79% 29%,
     85% 27%,
     100% 64%,
     98% 67%
-  ); /* Ensure compatibility with older browsers */
+  ); 
   transition: background 0.2s;
   z-index: 3;
   transform: scale(0.57);
 }
 
 .clipped-div-fork:hover {
-  background-color: #ff33338a; /* Set a background color */
+  background-color: #ff33338a;
 }
 
 .clipped-div-frame {
   position: absolute;
   z-index: 1;
-  background-color: #33ff7a00; /* Set a background color */
+  background-color: #33ff7a00; 
   clip-path: polygon(
     29% 32%,
     76% 18%,
@@ -564,22 +565,22 @@
     3% 57%,
     31% 38%
   );
-  width: 100%; /* Adjust until it matches the wheel size */
+  width: 100%; 
   aspect-ratio: 1/1;
-  left: -0.2%; /* Adjust until it matches the wheel position */
-  top: -45.5%; /* Adjust until it matches the wheel position */
+  left: -0.2%; 
+  top: -45.5%;
   transition: background 0.2s;
   z-index: 3;
   transform: scale(0.572);
 }
 
 .clipped-div-frame:hover {
-  background-color: #ff33338a; /* Set a background color */
+  background-color: #ff33338a;
 }
 
 .clipped-div-seat {
   position: absolute;
-  background-color: #e690ee00; /* Set a background color */
+  background-color: #e690ee00; 
   clip-path: polygon(
     11% 6%,
     22% 8%,
@@ -604,42 +605,42 @@
     19% 14%,
     13% 11%
   );
-  width: 100%; /* Adjust until it matches the wheel size */
+  width: 100%; 
   aspect-ratio: 1/1;
-  left: -0.4%; /* Adjust until it matches the wheel position */
-  top: -46%; /* Adjust until it matches the wheel position */
+  left: -0.4%;
+  top: -46%; 
   transition: background 0.2s;
   z-index: 3;
   transform: scale(0.55);
 }
 
 .clipped-div-seat:hover {
-  background-color: #ff33338a; /* Set a background color */
+  background-color: #ff33338a; 
 }
 
 .clipped-div-chain {
   position: absolute;
   z-index: 2;
-  background-color: #ebe06700; /* Set a background color */
+  background-color: #ebe06700; 
   clip-path: polygon(53% 63%, 53% 79%, 0 83%, 0 58%);
   -webkit-clip-path: polygon(53% 63%, 53% 79%, 0 83%, 0 58%);
-  width: 100%; /* Adjust until it matches the wheel size */
+  width: 100%; 
   aspect-ratio: 1/1;
-  left: -3%; /* Adjust until it matches the wheel position */
-  top: -46%; /* Adjust until it matches the wheel position */
+  left: -3%; 
+  top: -46%; 
   transition: background 0.2s;
   z-index: 3;
   transform: scale(0.55);
 }
 
 .clipped-div-chain:hover {
-  background-color: #ff33338a; /* Set a background color */
+  background-color: #ff33338a;
 }
 
 .clipped-div-paddle {
   position: absolute;
   z-index: 8;
-  background-color: #eb676700; /* Set a background color */
+  background-color: #eb676700; 
   clip-path: polygon(
     55% 68%,
     59% 68%,
@@ -660,25 +661,25 @@
     41% 68%,
     52% 67%
   );
-  width: 50%; /* Adjust until it matches the wheel size */
+  width: 50%; 
   aspect-ratio: 1/1;
-  left: 25%; /* Adjust until it matches the wheel position */
-  top: 2%; /* Adjust until it matches the wheel position */
+  left: 25%; 
+  top: 2%;
   transition: background 0.2s;
   z-index: 3;
   transform: scale(1.1) rotate(1deg);
 }
 
 .clipped-div-paddle:hover {
-  background-color: #ff33338a; /* Set a background color */
+  background-color: #ff33338a; 
 }
 
 .clipped-div-front-wheel {
   position: absolute;
-  width: 35.7%; /* Adjust until it matches the wheel size */
+  width: 35.7%; 
   aspect-ratio: 1/1;
-  left: 59.2%; /* Adjust until it matches the wheel position */
-  top: 30%; /* Adjust until it matches the wheel position */
+  left: 59.2%; 
+  top: 30%; 
   background-color: rgba(255, 127, 80, 0);
   clip-path: circle(50% at 50% 50%);
   transition: background 0.2s;
@@ -702,47 +703,6 @@
 .clipped-div-back-wheel:hover {
   background-color: #33ff7aa1;
 }
-/*
-
-/* Popup Styles */
-
-.popup {
-  color: black;
-  display: none; /* Initially hidden */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1100;
-  background-color: white;
-  border: 2px solid #ccc;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-}
-
-.popup h2 {
-  margin-top: 0;
-  font-size: 2em;
-}
-
-.popup span {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.close-popup {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.close-popup:hover {
-  background-color: #d32f2f;
-}
 
 /* MY TRAVELS PAGE */
 
@@ -752,19 +712,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh; /* Full viewport height */
-  background-image: url("../assets/images/Amsterdam\ to\ Slovenia.png"); /* Correct relative path */
-  background-size: cover; /* Ensure the image covers the entire section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  color: rgb(65, 24, 24); /* Adjust text color for contrast */
+  height: 100vh; 
+  background-image: url("../assets/images/Amsterdam\ to\ Slovenia.png"); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  color: rgb(65, 24, 24);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-/* Add this to styles.css */
 .hero-travels1 .hero-text {
-  background: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  background: rgba(255, 255, 255, 0.85); 
   padding: 40px 60px;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
@@ -772,3 +731,109 @@
 }
 
 /* Responsive clipped divs for wheels */
+
+.popup {
+  position: fixed;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border: #7e7e7e 2px solid;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+#popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Template styling for popup content */
+
+/* Algemene sectie spacing */
+.popup-section {
+  margin-top: 30px;
+}
+
+/* Rij-layout */
+.popup-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+/* Grid-layout (meerdere items naast elkaar) */
+.popup-grid {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+/* Kolom voor kleine items */
+.popup-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Grote afbeelding / blok */
+.popup-img-lg {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Medium afbeelding / blok */
+.popup-img-md {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Kleine afbeelding / blok */
+.popup-img-sm {
+  width: 70px;
+  height: 70px;
+  background-color: #ddd;
+}
+
+/* Tekst styling */
+.popup-text {
+  flex: 1;
+}
+
+/* Lijst styling */
+.popup-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  flex-shrink: 0;
+}

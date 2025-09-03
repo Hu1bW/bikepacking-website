@@ -59,24 +59,143 @@
         <span class="highlight-text">Back Wheel</span>
     </div>
 
-    <div class="clipped-div-steering-wheel">
-        <span class="highlight-text">Steering Wheel</span>
+</div>
+
+<!-- Popup container -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <span id="popup-close">&times;</span>
+    <!-- Hier wordt de template inhoud ingevoegd -->
+  </div>
+</div>
+
+<!-- Template -->
+<template id="clipped-div-steering-template">
+  <h2>Het stuur</h2>
+  <h4>En de mogelijke bagage opties</h4>
+
+  <!-- Eerste sectie -->
+  <div class="popup-row">
+    <div class="popup-img-lg"></div>
+    <div class="popup-text">
+      <p>
+        Voorop mijn fiets hangt een [merknaam en type]<br>
+        waarmee ik sinds de aanschaf van Olivia al mee rij.
+      </p>
+      <p>Curabitur vel turpis nec libero gravida interdum.</p>
+      <p>Nam tincidunt libero sed justo aliquet, at tincidunt lorem.</p>
     </div>
+  </div>
 
-</div>
+  <!-- Tweede sectie -->
+  <div class="popup-section">
+    <h3>Wat heb ik aan mijn stuur</h3>
+    <div class="popup-grid">
+      <div class="popup-img-md"></div>
+      <div class="popup-col">
+        <div class="popup-img-sm"></div>
+        <div class="popup-img-sm"></div>
+      </div>
+      <ul class="popup-list">
+        <li>Item één</li>
+        <li>Item twee</li>
+        <li>Item drie</li>
+      </ul>
+    </div>
+  </div>
 
-    
- 
+  <!-- Derde sectie -->
+  <div class="popup-section">
+    <h3>Mijn tassen</h3>
+    <div class="popup-text">
+      <p>Dit is een beschrijving van de tassen die ik meeneem.</p>
+      <p>Ze variëren per reis en weersomstandigheden.</p>
+    </div>
+    <div class="popup-grid">
+      <div class="popup-img-md"></div>
+      <div class="popup-col">
+        <div class="popup-img-sm"></div>
+        <div class="popup-img-sm"></div>
+      </div>
+      <ul class="popup-list">
+        <li>Tas 1</li>
+        <li>Tas 2</li>
+        <li>Tas 3</li>
+      </ul>
+    </div>
+  </div>
+</template>
 
-<!-- Content voor de pup-ups wanneer je op de clipped highlights klikt -->
+<!-- Frame Bag -->
+<template id="clipped-div-framebag-template">
+  <h2>Frame Bag</h2>
+  <img src="../assets/images/framebag.jpg" alt="Frame Bag" class="popup-img-full">
+  <p>De frame bag is ideaal voor zware spullen zoals gereedschap of eten. 
+     Alles blijft laag in het frame en beïnvloedt je balans minimaal.</p>
+</template>
 
-<div id="popup" class="popup">
-    <span id="popup-text"></span>
-    <button class="close-popup" onclick="closePopup()">Close</button>
-</div>
+<!-- Fork -->
+<template id="clipped-div-fork-template">
+  <h2>Voorvork en accessoires</h2>
+  <div class="popup-gallery">
+    <div class="popup-img-sm"></div>
+    <div class="popup-img-sm"></div>
+  </div>
+  <p>De vork biedt ruimte voor extra cages of dry bags. 
+     Perfect om gewicht voorop de fiets te dragen.</p>
+</template>
 
+<!-- Frame -->
+<template id="clipped-div-frame-template">
+  <h2>Frame</h2>
+  <p>Het hart van de fiets. Hier draag ik de meeste bagage in tassen of bidons.</p>
+  <ul>
+    <li>Sterk en licht aluminium</li>
+    <li>Bevestigingspunten voor bidonhouders</li>
+    <li>Stabiel tijdens lange ritten</li>
+  </ul>
+</template>
 
-    </section>
+<!-- Seat -->
+<template id="clipped-div-seat-template">
+  <h2>Zadel en zadeltas</h2>
+  <div class="popup-row">
+    <div class="popup-img-md"></div>
+    <div>
+      <p>De zadeltas gebruik ik voor lichte, maar volumineuze spullen 
+         zoals kleding of slaapspullen.</p>
+    </div>
+  </div>
+</template>
+
+<!-- Chain -->
+<template id="clipped-div-chain-template">
+  <h2>Ketting en aandrijving</h2>
+  <img src="../assets/images/chain.jpg" alt="Chain" class="popup-img-md">
+  <p>Betrouwbaar schakelen is essentieel tijdens lange reizen. 
+     Regelmatig schoonmaken voorkomt slijtage.</p>
+</template>
+
+<!-- Paddle -->
+<template id="clipped-div-paddle-template">
+  <h2>Pedaal</h2>
+  <p>Ik gebruik stevige flat pedals met grip, ideaal voor bikepacking.</p>
+  <p>Voordeel: ik kan op gewone schoenen fietsen, handig tijdens stops.</p>
+</template>
+
+<!-- Front Wheel -->
+<template id="clipped-div-front-wheel-template">
+  <h2>Voorwiel</h2>
+  <div class="popup-img-lg"></div>
+  <p>Stevig wiel met 32 spaken, geschikt voor onverharde wegen.</p>
+</template>
+
+<!-- Back Wheel -->
+<template id="clipped-div-back-wheel-template">
+  <h2>Achterwiel</h2>
+  <p>Het achterwiel draagt de meeste belasting. Hier monteer ik ook de 
+     aandrijving en vaak extra bagage.</p>
+</template>
 
 </body>
 </html>
