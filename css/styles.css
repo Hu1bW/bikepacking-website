@@ -851,7 +851,7 @@
 /* Lijst styling */
 .popup-list {
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 0;
   margin: 0;
   flex-shrink: 0;
 }
