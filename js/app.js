@@ -21,28 +21,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const popupContent = popup.querySelector(".popup-content");
   const closeBtn = document.getElementById("popup-close");
 
-  // Pak alle divs die beginnen met "clipped-div"
-  document.querySelectorAll("[class^='clipped-div']").forEach(div => {
+  // Alle clipped-divs selecteren
+  document.querySelectorAll("[class^='clipped-div-']").forEach(div => {
     div.addEventListener("click", () => {
-      const className = div.classList[0]; // bv. "clipped-div-steering"
-      const templateId = className + "-template"; // → "clipped-div-steering-template"
+      const templateId = `${div.classList[0]}-template`;
       const template = document.getElementById(templateId);
-
       if (template) {
-        // Reset content en voeg nieuwe in
-        popupContent.innerHTML = '<span id="popup-close">&times;</span>';
+        popupContent.innerHTML = "";
         popupContent.appendChild(template.content.cloneNode(true));
         popup.classList.remove("hidden");
-
-        // Close button (in content) opnieuw binden
-        popupContent.querySelector("#popup-close").addEventListener("click", () => {
-          popup.classList.add("hidden");
-        });
       }
     });
   });
 
-  // Sluiten via originele close button (fallback)
+  // Close button
   closeBtn.addEventListener("click", () => {
     popup.classList.add("hidden");
   });
